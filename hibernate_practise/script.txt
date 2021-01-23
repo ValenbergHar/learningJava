@@ -1,0 +1,48 @@
+CREATE TABLE person
+(
+id serial NOT NULL PRIMARY KEY,
+name text NOT NULL UNIQUE
+);
+
+CREATE TABLE product
+(
+id serial NOT NULL PRIMARY KEY,
+name text NOT NULL UNIQUE
+price double precision NOT NULL
+);
+
+CREATE TABLE person_product
+(
+person_id int NOT NULL REFERENCES person (id) ON DELETE CASCADE
+product_id int NOT NULL REFERENCES person (id) ON DELETE CASCADE
+price double precision
+);
+
+ALTER TABLE public.person_product
+    ADD COLUMN price double precision;
+
+індэкс для пошука
+CREATE INDEX person_name_idx ON person (name);
+CREATE INDEX product_name_idx ON product (name);
+
+паглядзець індэксы
+SELECT * FROM pg_indexes WHERE table name = 'person';
+SELECT * FROM pg_indexes WHERE table name = 'product';
+
+INSERT INTO person (name)
+VALUES
+('Person_1'),
+('Person_2'),
+('Person_3'),
+('Person_4'),
+('Person_5'),
+('Person_6');
+
+INSERT INTO product (name, price)
+VALUES
+('Product_1', 10000),
+('Product_2', 12000),
+('Product_3', 15800),
+('Product_4', 18450),
+('Product_5', 48850),
+('Product_6', 15480);

@@ -21,13 +21,12 @@ public class MainClass {
         Session session = null;
 
         try {
-            session = factory.getCurrentSession();
-            session.beginTransaction();
-            Reader reader=session.get(Reader.class, 1);
-            Book book=session.get(Book.class, 1);
-            reader.getBooks().add(book);
-
-            session.getTransaction().commit();
+//            session = factory.getCurrentSession();
+//            session.beginTransaction();
+//            Reader reader=session.get(Reader.class, 1);
+//            Book book=session.get(Book.class, 1);
+//            reader.getBooks().add(book);
+//            session.getTransaction().commit();
 
 //            session = factory.getCurrentSession();
 //            Author author = new Author();
@@ -36,13 +35,14 @@ public class MainClass {
 //            session.save(author);
 //            session.getTransaction().commit();
 
-//            session = factory.getCurrentSession();
-//            session.beginTransaction();
-//            Reader reader = session.get(Reader.class, 1);
-//            Book book = session.get(Book.class, 2);
-//            reader.getBooks().add(book);
-//            reader.getBooks().clear();
-//            session.getTransaction().commit();
+//            Add books in readers
+            session = factory.getCurrentSession();
+            session.beginTransaction();
+            Reader reader = session.get(Reader.class, 1);
+            Book book = session.get(Book.class, 2);
+          //  reader.getBooks().add(book);
+            reader.getBooks().clear();
+            session.getTransaction().commit();
 
 
 //            CREATE
@@ -85,7 +85,7 @@ public class MainClass {
 //            Book bookJava1 = session.get(Book.class, 4);
 //            session.delete(bookJava1);
 //            session.getTransaction().commit();
-
+//
 //            session = factory.getCurrentSession();
 //            session.beginTransaction();
 //             List<Book> allBooks = session.createQuery("from Book").getResultList();
