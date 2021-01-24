@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a60a1636-7b04-4d17-a77c-b1173759baa2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1c2HoaBsiAwdnrXLde1QQtQuLe3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -26,9 +44,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Education\Java\MaskevichValery\src\Java\algorithms\src" />
       <recent name="D:\Education\Java\MaskevichValery\src\algorithms\src\iuhij" />
     </key>
   </component>
@@ -118,33 +140,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589719943687</updated>
+      <workItem from="1611495689926" duration="491000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="395" y="90" key="#Inspections" timestamp="1589720182412">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1611495837175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="395" y="90" key="#Inspections/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1589720182412" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1589725489163">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611495837175" />
+    <state x="209" y="73" key="new project wizard" timestamp="1611495852315">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1589725489163" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1589725489163">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1589725489163" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1589725489163">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1589725489163" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1589725489163">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1589725489163" />
-    <state x="478" y="116" width="579" height="592" key="find.popup" timestamp="1589720212971">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="478" y="116" width="579" height="592" key="find.popup/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1589720212971" />
+    <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1611495852315" />
   </component>
 </project>
