@@ -1,0 +1,16 @@
+create table users(
+id serial NOT NULL PRIMARY KEY,
+name VARCHAR(100) DEFAULT NULL,
+	age integer NOT NULL
+);
+
+
+
+create table autos(
+id serial NOT NULL PRIMARY KEY,
+model VARCHAR(100) DEFAULT NULL,
+color VARCHAR(100) DEFAULT NULL,
+user_id integer NOT NULL
+);
+
+
