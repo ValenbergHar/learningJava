@@ -47,6 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,6 +55,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="hibernate_practise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -66,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611295192552</updated>
       <workItem from="1611295196106" duration="8684000" />
+      <workItem from="1611576290437" duration="3825000" />
     </task>
     <servers />
   </component>
@@ -82,8 +98,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2779" y="430" key="#Assign_Data_Sources" timestamp="1611579225193">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2779" y="430" key="#Assign_Data_Sources/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611579225193" />
+    <state x="2506" y="217" key="#Inspections" timestamp="1611580589629">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2506" y="217" key="#Inspections/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611580589629" />
     <state x="730" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611299060803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -93,5 +118,25 @@
     </state>
     <state x="913" y="371" width="465" height="669" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1611303755903" />
     <state x="2833" y="387" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611296571490" />
+    <state x="2510" y="228" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1611578860002">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2510" y="228" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611578860002" />
+    <state width="1876" height="290" key="GridCell.Tab.0.bottom" timestamp="1611580351996">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611580351996" />
+    <state width="1876" height="290" key="GridCell.Tab.0.center" timestamp="1611580351996">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="290" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611580351996" />
+    <state width="1876" height="290" key="GridCell.Tab.0.left" timestamp="1611580351996">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="290" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611580351996" />
+    <state width="1876" height="290" key="GridCell.Tab.0.right" timestamp="1611580351996">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="290" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1611580351996" />
   </component>
 </project>
