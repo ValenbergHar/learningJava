@@ -28,12 +28,12 @@ public class MainClass {
 //            reader.getBooks().add(book);
 //            session.getTransaction().commit();
 
-//            session = factory.getCurrentSession();
-//            Author author = new Author();
-//            author.setName("Rowling");
-//            session.beginTransaction();
-//            session.save(author);
-//            session.getTransaction().commit();
+            session = factory.getCurrentSession();
+            Author author = new Author();
+            author.setName("Rowling");
+            session.beginTransaction();
+            session.save(author);
+            session.getTransaction().commit();
 
 //            Add books in readers
             session = factory.getCurrentSession();
