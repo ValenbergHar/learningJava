@@ -784,12 +784,12 @@ false YEKT
 false Z
 false Zulu
 </TimeZones>
-      <StartupTime>1611859644</StartupTime>
+      <StartupTime>1612073336</StartupTime>
     </root>
     <database id="2" parent="1" name="app1">
       <ObjectId>17180</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>683</IntrospectionStateNumber>
+      <IntrospectionStateNumber>862</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="auto">
@@ -862,7 +862,7 @@ false Zulu
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>684</IntrospectionStateNumber>
+      <IntrospectionStateNumber>863</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="20" parent="2" name="heap">
@@ -933,50 +933,170 @@ false Zulu
     <language id="30" parent="2" name="plpgsql"/>
     <language id="31" parent="2" name="sql"/>
     <sequence id="32" parent="19" name="hibernate_sequence">
-      <ObjectId>17235</ObjectId>
+      <ObjectId>17480</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>680</StateNumber>
+      <StateNumber>853</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>bigint|0s</DataType>
     </sequence>
     <table id="33" parent="19" name="app1">
-      <ObjectId>17237</ObjectId>
+      <ObjectId>17482</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>681</StateNumber>
+      <StateNumber>854</StateNumber>
     </table>
-    <column id="34" parent="33" name="id">
+    <table id="34" parent="19" name="homeaddress">
+      <ObjectId>17490</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>857</StateNumber>
+    </table>
+    <table id="35" parent="19" name="person">
+      <ObjectId>17495</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>857</StateNumber>
+    </table>
+    <table id="36" parent="19" name="person_homeaddress">
+      <ObjectId>17434</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>822</StateNumber>
+    </table>
+    <column id="37" parent="33" name="number">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>681</StateNumber>
+      <StateNumber>854</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="35" parent="33" name="date">
+    <column id="38" parent="33" name="street">
       <Position>2</Position>
-      <DataType>date|0s</DataType>
-      <StateNumber>681</StateNumber>
-      <TypeId>1082</TypeId>
-    </column>
-    <column id="36" parent="33" name="text">
-      <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>681</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>854</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="37" parent="33" name="app1_pkey">
-      <ObjectId>17240</ObjectId>
-      <StateNumber>681</StateNumber>
+    <column id="39" parent="33" name="date">
+      <Position>3</Position>
+      <DataType>date|0s</DataType>
+      <StateNumber>854</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="40" parent="33" name="name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>854</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="41" parent="33" name="app1_pkey">
+      <ObjectId>17488</ObjectId>
+      <StateNumber>854</StateNumber>
+      <ColNames>number
+street</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="42" parent="33" name="app1_pkey">
+      <ObjectId>17489</ObjectId>
+      <StateNumber>854</StateNumber>
+      <ColNames>number
+street</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>app1_pkey</UnderlyingIndexName>
+    </key>
+    <column id="43" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>855</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="44" parent="34" name="street">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>855</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="45" parent="34" name="person_id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>855</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="46" parent="34" name="homeaddress_pkey">
+      <ObjectId>17493</ObjectId>
+      <StateNumber>855</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="38" parent="33" name="app1_pkey">
-      <ObjectId>17241</ObjectId>
-      <StateNumber>681</StateNumber>
+    <key id="47" parent="34" name="homeaddress_pkey">
+      <ObjectId>17494</ObjectId>
+      <StateNumber>855</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
-      <UnderlyingIndexName>app1_pkey</UnderlyingIndexName>
+      <UnderlyingIndexName>homeaddress_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="48" parent="34" name="fkaj604lo37xyiqnrt354yfkj64">
+      <ObjectId>17500</ObjectId>
+      <StateNumber>857</StateNumber>
+      <ColNames>person_id</ColNames>
+      <RefTableId>17495</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>person</RefTableName>
+      <RefKeyName>person_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="49" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>856</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="50" parent="35" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>856</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="51" parent="35" name="person_pkey">
+      <ObjectId>17498</ObjectId>
+      <StateNumber>856</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="52" parent="35" name="person_pkey">
+      <ObjectId>17499</ObjectId>
+      <StateNumber>856</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>person_pkey</UnderlyingIndexName>
+    </key>
+    <column id="53" parent="36" name="person_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>819</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="54" parent="36" name="homeaddresslist_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>819</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="55" parent="36" name="uk_dd2nn84snf6j18elm0uq3h3ve">
+      <ObjectId>17437</ObjectId>
+      <StateNumber>820</StateNumber>
+      <ColNames>homeaddresslist_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="56" parent="36" name="uk_dd2nn84snf6j18elm0uq3h3ve">
+      <ObjectId>17438</ObjectId>
+      <StateNumber>820</StateNumber>
+      <ColNames>homeaddresslist_id</ColNames>
+      <UnderlyingIndexName>uk_dd2nn84snf6j18elm0uq3h3ve</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
