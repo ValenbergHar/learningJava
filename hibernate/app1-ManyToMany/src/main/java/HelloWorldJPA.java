@@ -18,21 +18,21 @@ public class HelloWorldJPA {
         session = factory.getCurrentSession();
         session.beginTransaction();
 //
-//        HomeAddress homeAddress = new HomeAddress("Batoryja");
-//        List<HomeAddress> homeAddresslist = new ArrayList<>();
-//        homeAddresslist.add(homeAddress);
-//
-//        Person person = new Person("Zianon", homeAddresslist);
-//        List<Person> personList = new ArrayList<>();
-//        personList.add(person);
-//        homeAddress.setPerson(personList);
-//
-//        session.persist(person);
-//        session.persist(homeAddress);
+        HomeAddress homeAddress = new HomeAddress("Batoryja");
+        List<HomeAddress> homeAddresslist = new ArrayList<>();
+        homeAddresslist.add(homeAddress);
 
-        Person load = session.load(Person.class, 1);
-        List<HomeAddress> homeAddresses = load.getHomeAddressList();
-        System.out.println(homeAddresses);
+        Person person = new Person("Zianon", homeAddresslist);
+        List<Person> personList = new ArrayList<>();
+        personList.add(person);
+        homeAddress.setPerson(personList);
+
+        session.persist(person);
+        session.persist(homeAddress);
+
+//        Person load = session.load(Person.class, 1);
+//        List<HomeAddress> homeAddresses = load.getHomeAddressList();
+//        System.out.println(homeAddresses);
 
 
 
