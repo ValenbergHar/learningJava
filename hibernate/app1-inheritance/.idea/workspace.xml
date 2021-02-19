@@ -47,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring/lesson3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -95,6 +95,7 @@
       <workItem from="1612347795062" duration="6000" />
       <workItem from="1612347830463" duration="3104000" />
       <workItem from="1612357918821" duration="1887000" />
+      <workItem from="1613730496478" duration="322000" />
     </task>
     <servers />
   </component>
@@ -144,11 +145,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="698" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1612358224282" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1612340205957">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1613730820880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="592" y="217" key="FileChooserDialogImpl/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1612021857632" />
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1612340205957" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1613730820880" />
     <state width="1860" height="271" key="GridCell.Tab.0.bottom" timestamp="1612359826608">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
