@@ -10,6 +10,5 @@ public class OurController {
     @RequestMapping(path = "/getsmth", method = RequestMethod.GET)
     public String getSmth(){
         return "hello";
-
     }
 }
