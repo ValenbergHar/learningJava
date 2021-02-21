@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.openjdk.jol:jol-samples:0.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjdk.jol/jol-samples/0.8/58d00c3ac1dcc2ccc6c8afb7c227e8e555a7800f/jol-samples-0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjdk.jol/jol-samples/0.8/5403dde6e59d50e5ceb4488d8c70e33f8437b2b/jol-samples-0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

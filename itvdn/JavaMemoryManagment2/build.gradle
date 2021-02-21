@@ -1,0 +1,17 @@
+group 'com.itvdn.webinar.jmm'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.openjdk.jol', name: 'jol-core', version: '0.8'
+    // jol samples
+    compile group: 'org.openjdk.jol', name: 'jol-samples', version: '0.8'
+}
