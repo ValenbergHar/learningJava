@@ -300,6 +300,7 @@
       <workItem from="1588693915252" duration="5427000" />
       <workItem from="1613894042052" duration="562000" />
       <workItem from="1613896216086" duration="1670000" />
+      <workItem from="1615212948351" duration="645000" />
     </task>
     <servers />
   </component>
@@ -319,10 +320,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1613896864821">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1615212981157">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613896864821" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615212981157" />
     <state width="1493" height="303" key="GridCell.Tab.0.bottom" timestamp="1613898188061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -343,6 +344,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1613897070968" />
+    <state x="209" y="73" key="new project wizard" timestamp="1615212991036">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1615212991036" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
