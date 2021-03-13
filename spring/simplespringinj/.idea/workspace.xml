@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78d6c41-765c-4713-82ad-33268fa45d61" name="Default Changelist" comment="" />
+    <list default="true" id="10fd4cc9-b272-489e-9ff2-0d712a12ab26" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1pZmyBnD47QNfwfxQoclVRKBj0N" />
+  <component name="ProjectId" id="1pfnCmUscuu6qxr2uvsGDBbU6mR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,29 +46,32 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../simplespringinj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="springstart" />
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.simple.App" />
+      <module name="simplespringinj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simple.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -77,15 +80,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c78d6c41-765c-4713-82ad-33268fa45d61" name="Default Changelist" comment="" />
-      <created>1615399238365</created>
+      <changelist id="10fd4cc9-b272-489e-9ff2-0d712a12ab26" name="Default Changelist" comment="" />
+      <created>1615582886910</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1615399238365</updated>
-      <workItem from="1615399241832" duration="669000" />
-      <workItem from="1615400573005" duration="1402000" />
-      <workItem from="1615575925885" duration="2430000" />
-      <workItem from="1615637021954" duration="51000" />
+      <updated>1615582886910</updated>
+      <workItem from="1615582890340" duration="848000" />
+      <workItem from="1615637075450" duration="1645000" />
+      <workItem from="1615662075896" duration="2241000" />
+      <workItem from="1615666321308" duration="2000" />
     </task>
     <servers />
   </component>
@@ -105,37 +108,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="249" y="0" key="#Project_Structure" timestamp="1615400787952">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1615638508547">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1615400787952" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1615401815435">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615638508547" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1615583739481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1615401815435" />
-    <state x="127" y="33" key="FileChooserDialogImpl" timestamp="1615637071670">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615583739481" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1615583739481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="127" y="33" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615637071670" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1615401977968">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615583739481" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1615583739481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615401977968" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1615401977967">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615583739481" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1615583739481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615401977967" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1615401977967">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615583739481" />
+    <state x="209" y="73" key="new project wizard" timestamp="1615638762631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615401977967" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1615401977968">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615401977968" />
-    <state x="209" y="73" key="new project wizard" timestamp="1615582885908">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1615582885908" />
+    <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1615638762631" />
   </component>
 </project>
