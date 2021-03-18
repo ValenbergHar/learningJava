@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 @Component
@@ -32,6 +33,32 @@ public class ProductRepository {
     }
 
     public void save(Product product) {
-        products.add(product);
+        if (product.getId() == null) {
+            Long newId = products.stream().mapToLong(Product::getId).max().getAsLong() + 1;
+            product.setId(newId);
+            products.add(product);
+            return;
+        } else {
+            Iterator<Product> iterator = products.iterator();
+            while (iterator.hasNext()) {
+                Product p = iterator.next();
+                if (p.getId().equals(product.getId())) {
+                    p.setPrice(product.getPrice());
+                    p.setTitle(product.getTitle());
+                    return;
+                }
+            }
+        }
+    }
+
+    public void deleteById(Long id) {
+        Iterator<Product> iterator = products.iterator();
+        while (iterator.hasNext()) {
+            Product product = iterator.next();
+            if (product.getId().equals(id)) {
+                iterator.remove();
+                return;
+            }
+        }
     }
 }

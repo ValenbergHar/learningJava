@@ -18,19 +18,46 @@ public class ProductsController {
     }
 
     @GetMapping
-    public String showProductsList(Model model) {
+    public String showProductsList(Model model, @RequestParam(value="word", required = false)String word) {
         Product product = new Product();
-        model.addAttribute("products", productsService.getAllProducts());
+        model.addAttribute("products", productsService.getAllProductsWithFilter(word));
         model.addAttribute("product", product);
+        model.addAttribute("word", word);
         return "products";
     }
 
-    @PostMapping("/add")
+    @PostMapping("/edit")
     public String addProduct(@ModelAttribute(value = "product") Product product) {
         productsService.add(product);
         return "redirect:/products";
     }
 
+    @GetMapping("/show/{id}")
+    public String showOneProduct(Model model, @PathVariable(value = "id") Long id) {
+        Product product = productsService.getById(id);
+        model.addAttribute("product", product);
+        return "product-page";
+    }
+
+    @GetMapping("/delete/{id}")
+    public String deleteById(@PathVariable(value = "id") Long id) {
+        productsService.deleteById(id);
+        return "redirect:/products";
+    }
+
+    @GetMapping("/add")
+    public String showAddProductForm(Model model){
+        Product product = new Product();
+        model.addAttribute("product", product);
+        return "product-edit";
+    }
+
+    @GetMapping("/edit/{id}")
+    public String showAddProductForm(Model model, @PathVariable(value = "id") Long id){
+        Product product = productsService.getById(id);
+        model.addAttribute("product", product);
+        return "product-edit";
+    }
 
 }
 

@@ -26,7 +26,7 @@ public class ProductsController {
     }
 
     @PostMapping("/add")
-    public String addProduct(@ModelAttribute(value = "product")Product product) {
+    public String addProduct(@ModelAttribute(value = "product") Product product) {
         productsService.add(product);
         return "redirect:/products";
     }
@@ -35,6 +35,13 @@ public class ProductsController {
     public String showOneProduct(Model model, @PathVariable(value = "id") Long id) {
         Product product = productsService.getById(id);
         model.addAttribute("product", product);
+        return "product-page";
+    }
+
+    @GetMapping("/show")
+    public String showOneProduct(Model model) {
+        Product product = new Product(10L, "Zianon", 1944);
+        model.addAttribute("product");
         return "product-page";
     }
 }
