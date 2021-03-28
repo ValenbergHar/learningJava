@@ -4,6 +4,7 @@ import com.example.demo.domain.Role;
 import com.example.demo.domain.User;
 import com.example.demo.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Controller
+@PreAuthorize("hasAuthority('ADMIN')")
 @RequestMapping("/user")
 public class UserController {
     @Autowired
@@ -49,7 +51,7 @@ public class UserController {
                 user.getRoles().add(Role.valueOf(key));
             }
         }
-        
+        userRepo.save(user);
         return "redirect:/user";
     }
 }

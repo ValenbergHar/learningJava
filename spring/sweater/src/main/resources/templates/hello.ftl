@@ -1,5 +1,5 @@
 <#import "parts/common.ftl" as c>
 <@c.page>
-    <div>Hello, user</div>
-    <a href="/main">Main page</a>
+    <h5>Жыве Беларусь!</h5>
+    <div>Жыве вечна!</div>
 </@c.page>
