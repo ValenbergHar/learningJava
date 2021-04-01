@@ -50,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring-Email-Client" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,6 +87,7 @@
       <workItem from="1613316385197" duration="122000" />
       <workItem from="1613730825330" duration="2416000" />
       <workItem from="1613734772437" duration="5889000" />
+      <workItem from="1617175479496" duration="690000" />
     </task>
     <servers />
   </component>
@@ -118,6 +119,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1613738835302" />
+    <state x="2485" y="149" width="863" height="513" key="FileChooserDialogImpl" timestamp="1617176710488">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2485" y="149" width="863" height="513" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617176710488" />
     <state width="1876" height="228" key="GridCell.Tab.0.bottom" timestamp="1613741656327">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
