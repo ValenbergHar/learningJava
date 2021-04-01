@@ -1,32 +1,28 @@
-CREATE TABLE products (id serial, title varchar(100), price int);
+create sequence hibernate_sequence start 1 increment 1;
 
-INSERT INTO products (title, price) VALUES ('Bread', 40), ('Milk', 80);
+ create table message
+ (id int8 not null,
+  filename varchar(255),
+  tag varchar(255),
+  text varchar(2048) not null,
+  author_id int8,
+  primary key (id));
 
-CREATE TABLE users (
-    username VARCHAR(50) NOT NULL,
-    password VARCHAR(100) NOT NULL,
-    enabled boolean NOT NULL,
-    PRIMARY KEY (username)
-);
+ create table user_role
+  (user_id int8 not null, roles varchar(255));
 
-INSERT INTO users
-VALUES
-('user1', '{noop}123', true),
-('user2', '{noop}123', true);
+ create table usr
+ (id int8 not null,
+ activation_code varchar(255),
+  active boolean not null,
+  email varchar(255),
+  password varchar(255) not null,
+  username varchar(255) not null,
+  primary key (id));
 
-CREATE TABLE authorities (
-    username varchar(50) NOT NULL,
-    authority varchar(50) NOT NULL,
+ alter table if exists message
+ add constraint message_user_fk foreign key (author_id) references usr;
 
-    CONSTRAINT authorities_idx UNIQUE (username, authority),
-
-    CONSTRAINT authorities_ibfk_1
-    FOREIGN KEY (username)
-    REFERENCES users (username)
-);
-
-INSERT INTO authorities
-VALUES
-('user1', 'ROLE_ADMIN'),
-('user1', 'ROLE_USER'),
-('user2', 'ROLE_USER');
+ alter table if exists user_role
+ add constraint user_role_user_fk
+ foreign key (user_id) references usr;
