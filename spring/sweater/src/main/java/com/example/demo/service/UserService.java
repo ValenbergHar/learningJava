@@ -38,6 +38,13 @@ public class UserService implements UserDetailsService {
         userRepo.save(user);
 
 
+        sendMessage(user);
+
+
+        return true;
+    }
+
+    private void sendMessage(User user) {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format("Hello, %s! \n"
                             + "Welcome to Sweater. Please, visit next link http://localhost:8189/activate/%s",
@@ -46,9 +53,6 @@ public class UserService implements UserDetailsService {
             );
             mailSender.send(user.getEmail(), "Acrtivation code", message);
         }
-
-
-        return true;
     }
 
     public boolean activateUser(String code) {
@@ -74,10 +78,33 @@ public class UserService implements UserDetailsService {
 
         user.getRoles().clear();
         for (String key : form.keySet()) {
-            if(roles.contains(key)){
+            if (roles.contains(key)) {
                 user.getRoles().add(Role.valueOf(key));
             }
         }
         userRepo.save(user);
+    }
+
+    public void updatePrifile(User user, String password, String email) {
+        String userEmail = user.getEmail();
+        boolean isEmailChanged = (email != null && !email.equals(userEmail)) ||
+                (userEmail != null && !userEmail.equals(email));
+
+        if (isEmailChanged) {
+            user.setEmail(email);
+
+            if (!StringUtils.isEmpty(email)) {
+                user.setActivationCode(UUID.randomUUID().toString());
+            }
+
+            if (!StringUtils.isEmpty(password)) {
+                user.setPassword(password);
+            }
+            userRepo.save(user);
+
+            if (!isEmailChanged)
+            sendMessage(user);
+
+        }
     }
 }
