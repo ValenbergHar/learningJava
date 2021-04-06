@@ -1,5 +1,7 @@
 package com.example.demo.domain;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.beans.factory.annotation.Value;
 
 import javax.persistence.*;
@@ -13,6 +15,8 @@ public class Message {
 
     private  String filename;
 
+    @NotBlank(message = "Please, fill the message")
+    @Length (max = 2048, message = "Message too long")
     private String text;
     private String tag;
 
