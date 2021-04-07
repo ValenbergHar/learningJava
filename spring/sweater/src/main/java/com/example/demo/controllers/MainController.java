@@ -61,7 +61,10 @@ public class MainController {
         message.setAuthor(user);
 
         if (bindingResult.hasErrors()) {
-            bindingResult.getFieldErrors().stream().collect();
+            Map<String, String> errorsMap = ControllerUtils.getErrors(bindingResult);
+
+            model.mergeAttributes(errorsMap);
+            model.addAttribute("message", message);
         } else {
 
 
@@ -79,7 +82,7 @@ public class MainController {
 
                 message.setFilename(resultFilename);
             }
-
+model.addAttribute("message", null);
             messageRepo.save(message);
         }
         Iterable<Message> messages = messageRepo.findAll();
