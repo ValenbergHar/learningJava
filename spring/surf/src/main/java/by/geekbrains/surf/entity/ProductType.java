@@ -1,11 +1,9 @@
 package by.geekbrains.surf.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Entity(name="product_type")
+@Entity
+@Table(name = "product_type")
 public class ProductType {
 
     @Id

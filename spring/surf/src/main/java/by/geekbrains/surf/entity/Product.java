@@ -1,11 +1,15 @@
 package by.geekbrains.surf.entity;
 
+
+
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 
 @Entity
+@Table(name = "product")
 public class Product {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -99,5 +103,4 @@ public class Product {
     public void setProductType(ProductType productType) {
         this.productType = productType;
     }
-
 }
