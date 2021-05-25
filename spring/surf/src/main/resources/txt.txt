@@ -1,0 +1,11 @@
+INSERT INTO product_type (id, name) VALUES
+(1, 'New product'),
+(2, 'Top product'),
+(3, 'Sale product');
+
+
+INSERT INTO product (id, name, new_product, hot_product, price, old_price, image, description, product_type_id ) VALUES
+(1, 'New product', true, false, 1000, 1500, 's1.jpg', 'fvdfg', 1 ),
+(2, 'Top product', true, false, 1000, 1500, 's1.jpg', 'fvdfg', 2 ),
+(3, 'Sale product', true, false, 1000, 1500, 's1.jpg', 'fvdfg', 3 ),
+(4, 'Top product', true, false, 1000, 1500, 's1.jpg', 'fvdfxfhgfhghfghg', 2 );
